@@ -212,17 +212,20 @@ class Main{
 	//Metodo para obtener la mediana
 	public static  double mediana(double[] arreglo){
 		double mediana;
-		if (arreglo.length % 2 == 0)
+		if (arreglo.length % 2 == 0){
 		    mediana = ((double)arreglo[arreglo.length/2] + (double)arreglo[arreglo.length/2 - 1])/2;
-		else
+		}
+		else{
 		    mediana = (double) arreglo[arreglo.length/2];
+		}
 		return mediana;
 	}
 	//Metodo para obtener la Media
 	public static double media(double[] arreglo){
 		double suma = 0;
-		for (double valor : arreglo) 
+		for (double valor : arreglo){ 
 			suma += valor;
+		}
 		double media = 1.0d * suma / arreglo.length;
 		return media;
 	}
@@ -235,17 +238,19 @@ class Main{
 	  for (int i = 0; i < arreglo.length; i++){
 	    int contador = 0;
 	    for (int j = 0; j < arreglo.length; j++){
-	      if (arreglo[j] == arreglo[i]) 
+	      if (arreglo[j] == arreglo[i]){ 
 	      	contador++;
+	      	}
 	    }
 	    if (contador > maximo){
 	      maximo = contador;
 	      moda.clear();
 	      moda.add(arreglo[i]);
-	    } else 
+	    } else{ 
 	    	if (contador == maximo){
 		      moda.add(arreglo[i]);
 		    }
+		}
 	  }
 	  System.out.println(Arrays.toString(moda.toArray()));
 	}
@@ -255,11 +260,11 @@ class Main{
 		   double promedio = media(arreglo);
 		   for (double valor : arreglo)
 		   {
-		       double diferencia = valor - promedio;
+		       double diferencia = valor-promedio;
 		       diferencia *= diferencia;
 		       diferenciasCuadradas += diferencia;
 		   }
-		   return (diferenciasCuadradas  / (arreglo.length-1));
+		   return (diferenciasCuadradas /(arreglo.length-1));
 	}
 	//Metodo para obtener la desviacion estandar
 	public static double desviacionEstandar(double[] arreglo){
