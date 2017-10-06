@@ -1,0 +1,8 @@
+ * Heloel Hernandez Santos A07007415
+ * Jose Pablo Ortiz Lack A01099655
+
+Conclusión
+Al realizar esta actividad nos hemos dado cuanta que realmente al programamar no trabajamos con numeros aleatorios,
+sino que que son pseudoaleatorios, al tomar como base semilla, modulo, etc.
+Tambien comprendemos que los numeros que obtenemos que se pueden repetir, pero no solo eso sino que hay un ciclo de repetición.
+Muchas veces el que los numeros no sean realmente aleatorios puede resultar una ventaja, por ejemplo cuando los necesitas volver a reproducir.
